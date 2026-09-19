@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="顾惜陆靖尧挺入 - 深度解析《顾惜》与陆靖尧角色关系，提供剧情走向分析、人物背景介绍及读者讨论社区。">
+    <meta name="keywords" content="顾惜, 陆靖尧, 顾惜陆靖尧挺入, 角色分析, 剧情解析, 网文推荐">
+    <title>顾惜陆靖尧挺入 - 角色深度解析与剧情探讨</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg-body: #f8f9fa;
+            --bg-card: #ffffff;
+            --text-main: #2c3e50;
+            --text-secondary: #6c757d;
+            --accent-color: #6c5ce7;
+            --accent-hover: #5649c0;
+            --border-color: #e9ecef;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            color: var(--text-main);
+        }
+
+        .section-title::before {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 24px;
+            background-color: var(--accent-color);
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-card);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        .search-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--text-secondary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: rgba(108, 92, 231, 0.1);
+            color: var(--accent-color);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Main Content Grid */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-wrapper {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Article List */
+        .article-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid var(--border-color);
+        }
+
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-meta {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            gap: 10px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .card-excerpt {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+        }
+
+        .read-more {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .read-more::after {
+            content: '→';
+            margin-left: 5px;
+            transition: margin-left 0.2s;
+        }
+
+        .read-more:hover::after {
+            margin-left: 10px;
+        }
+
+        /* Sidebar */
+        .sidebar-widget {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+
+        .widget-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+        }
+
+        .role-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .role-list li:last-child {
+            border-bottom: none;
+        }
+
+        .role-name {
+            font-weight: 600;
+        }
+
+        .role-role {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .chart-placeholder {
+            width: 100%;
+            height: 150px;
+            background-color: #f1f3f5;
+            border-radius: 4px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            padding: 10px;
+            position: relative;
+        }
+
+        .bar {
+            width: 12%;
+            background-color: var(--accent-color);
+            border-radius: 2px 2px 0 0;
+            opacity: 0.8;
+            transition: height 0.5s ease;
+        }
+        
+        .bar:hover {
+            opacity: 1;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--bg-card);
+            padding: 3rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            display: none;
+            margin-top: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col a {
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+
+        .footer-col a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #95a5a6;
+            font-size: 0.85rem;
+        }
+
+        /* Micro-interaction */
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                剧情解析网
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">热门榜单</a></li>
+                    <li><a href="#">角色图鉴</a></li>
+                    <li><a href="#">读者社区</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </nav>
+            <button class="search-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>顾惜陆靖尧挺入</h1>
+                <p>深入剖析《顾惜》中陆靖尧这一角色的核心剧情节点与人物关系演变。</p>
+                <div class="hero-tags">
+                    <span class="tag">#剧情高潮</span>
+                    <span class="tag">#人物羁绊</span>
+                    <span class="tag">#结局解析</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="container main-grid">
+            <!-- Left Content -->
+            <section class="content-area">
+                <div class="section-title">深度解析</div>
+
+                <article class="article-card">
+                    <div class="card-meta">
+                        <span>作者：资深读者</span>
+                        <span>•</span>
+                        <span>更新于：2023-10-24</span>
+                    </div>
+                    <h2 class="card-title">陆靖尧视角下的情感转折：从克制到爆发</h2>
+                    <p class="card-excerpt">
+                        在故事的中段，陆靖尧对顾惜的态度发生了微妙的变化。这一阶段不仅是剧情推进的关键，也是理解“顾惜陆靖尧挺入”这一关键词背后深层含义的起点。文章将详细梳理这一转变过程中的心理活动与外部冲突。
+                    </p>
+                    <div class="card-footer">
+                        <span style="font-size:0.85rem; color:var(--text-secondary);">阅读时长：5分钟</span>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-meta">
+                        <span>分类：人物分析</span>
+                        <span>•</span>
+                        <span>浏览：12,450</span>
+                    </div>
+                    <h2 class="card-title">顾惜与陆靖尧：权力与情感的博弈</h2>
+                    <p class="card-excerpt">
+                        本章节探讨了两人关系中的张力。通过分析“挺入”这一动作在叙事学上的象征意义，我们揭示了陆靖尧如何通过这一行为打破两人之间长期维持的平衡，从而推动故事进入新的高潮。
+                    </p>
+                    <div class="card-footer">
+                        <span style="font-size:0.85rem; color:var(--text-secondary);">阅读时长：7分钟</span>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-meta">
+                        <span>分类：剧情预测</span>
+                        <span>•</span>
+                        <span>热度：8,920</span>
+                    </div>
+                    <h2 class="card-title">后续发展预测：情感线的收束</h2>
+                    <p class="card-excerpt">
+                        针对“顾惜陆靖尧挺入”后的剧情走向，社区读者展开了热烈讨论。本文结合原著风格，对两人未来的关系走向进行了合理的推演，分析了这一关键节点对后续剧情的深远影响。
+                    </p>
+                    <div class="card-footer">
+                        <span style="font-size:0.85rem; color:var(--text-secondary);">阅读时长：4分钟</span>
+                        <a href="#" class="read-more">阅读全文</a>
+                    </div>
+                </article>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <div class="section-title">常见问题 (FAQ)</div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">“挺入”这一情节在原著中是如何描写的？</div>
+                        <div class="faq-answer">
+                            该情节主要出现在故事的中后段，是陆靖尧情感积累到顶点的表现。作者通过细腻的环境描写和心理刻画，将这一行为赋予了强烈的情感色彩，而非单纯的动作展示。
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">陆靖尧这一角色的性格特点是什么？</div>
+                        <div class="faq-answer">
+                            陆靖尧通常被设定为外表冷酷、内心深沉的角色。他在面对顾惜时，从最初的克制到后来的爆发，体现了其性格中压抑与渴望并存的一面。
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">这对CP的读者反响如何？</div>
+                        <div class="faq-answer">
+                            在相关社区中，这对组合拥有极高的人气。读者们普遍认为两人的互动张力十足，剧情发展符合逻辑且具有戏剧性。
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">核心角色</h3>
+                    <ul class="role-list">
+                        <li>
+                            <span class="role-name">顾惜</span>
+                            <span class="role-role">女主角</span>
+                        </li>
+                        <li>
+                            <span class="role-name">陆靖尧</span>
+                            <span class="role-role">男主角</span>
+                        </li>
+                        <li>
+                            <span class="role-name">林婉儿</span>
+                            <span class="role-role">配角</span>
+                        </li>
+                        <li>
+                            <span class="role-name">顾父</span>
+                            <span class="role-role">反派/阻碍</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">读者热度榜</h3>
+                    <div class="chart-placeholder">
+                        <div class="bar" style="height: 40%"></div>
+                        <div class="bar" style="height: 60%"></div>
+                        <div class="bar" style="height: 30%"></div>
+                        <div class="bar" style="height: 80%"></div>
+                        <div class="bar" style="height: 50%"></div>
+                        <div class="bar" style="height: 90%"></div>
+                    </div>
+                    <p style="font-size:0.8rem; color:var(--text-secondary); margin-top:10px; text-align:center;">近期相关话题热度指数</p>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">推荐阅读</h3>
+                    <ul style="font-size:0.9rem;">
+                        <li style="margin-bottom:10px;"><a href="#">关于顾惜身世的详细考证</a></li>
+                        <li style="margin-bottom:10px;"><a href="#">陆靖尧过往经历全解析</a></li>
+                        <li style="margin-bottom:10px;"><a href="#">结局中暗示的伏笔分析</a></li>
+                        <li><a href="#">同类型高张力剧情推荐</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>剧情解析网</h4>
+                    <p style="font-size:0.9rem; color:#bdc3c7;">专注于深度解析各类文学作品中的关键剧情节点与人物关系。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>栏目导航</h4>
+                    <ul>
+                        <li><a href="#">热门文章</a></li>
+                        <li><a href="#">人物图鉴</a></li>
+                        <li><a href="#">剧情时间轴</a></li>
+                        <li><a href="#">读者投稿</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">联系方式</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">免责声明</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 剧情解析网. All rights reserved. 本站内容仅供讨论与学习使用.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Interaction
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
