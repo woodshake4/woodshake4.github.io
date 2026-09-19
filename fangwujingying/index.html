@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="防务精英之中国猎人 - 专业防务资讯与战术装备评测平台，提供全球防务动态、特种作战装备解析、军事科技前沿报道及战术装备选购指南。">
+    <meta name="keywords" content="防务精英之中国猎人, 军事资讯, 特种作战, 战术装备, 军事科技, 防务评测">
+    <title>防务精英之中国猎人-全球防务动态与战术装备评测指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #1a1f2c;
+            --accent-color: #d4af37;
+            --text-color: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --bg-color: #0f1115;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --nav-height: 70px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: 700;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -16px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        .section-more {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: rgba(15, 17, 21, 0.95);
+            height: var(--nav-height);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        .nav-cta {
+            padding: 8px 20px;
+            background-color: var(--accent-color);
+            color: #000;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .nav-cta:hover {
+            background-color: #b5952f;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://picsum.photos/seed/military_tech/1920/1080.jpg') center/cover no-repeat;
+            margin-bottom: 60px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background-color: rgba(212, 175, 55, 0.2);
+            color: var(--accent-color);
+            padding: 5px 10px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 2px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: #000;
+            font-weight: 700;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            margin-left: 15px;
+        }
+
+        .btn-outline:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Featured Grid */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            border-color: var(--accent-color);
+        }
+
+        .card-image {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            background-color: #2a303c;
+        }
+
+        .card-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-category {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .card-excerpt {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #666;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* Sidebar Layout */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .article-item {
+            display: flex;
+            gap: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .article-item:last-child {
+            border-bottom: none;
+        }
+
+        .article-thumb {
+            width: 200px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .article-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .article-content h3 a:hover {
+            color: var(--accent-color);
+        }
+
+        .article-content p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+
+        .article-date {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Sidebar Widgets */
+        aside .widget {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .widget-title {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .rank-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .rank-list li .rank-num {
+            width: 24px;
+            height: 24px;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .rank-list li:nth-child(1) .rank-num { background-color: var(--accent-color); }
+        .rank-list li:nth-child(2) .rank-num { background-color: #b5952f; }
+        .rank-list li:nth-child(3) .rank-num { background-color: #8a6d3b; }
+
+        .rank-list li a {
+            color: var(--text-color);
+        }
+
+        .rank-list li a:hover {
+            color: var(--accent-color);
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            padding: 5px 12px;
+            background-color: #21262d;
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .tag:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        /* Equipment Showcase Section */
+        .showcase-section {
+            background-color: #121419;
+            padding: 60px 0;
+            margin-top: 40px;
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .equip-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .equip-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+
+        .equip-card h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .equip-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0b0d10;
+            padding: 50px 0 20px;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 15px;
+            max-width: 300px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #1f2329;
+            color: #555;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .grid-layout {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero {
+                height: 400px;
+            }
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-item {
+                flex-direction: column;
+            }
+            .article-thumb {
+                width: 100%;
+                height: 180px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">防务精英<span>之中国猎人</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">防务资讯</a></li>
+                    <li><a href="#">战术装备</a></li>
+                    <li><a href="#">军事科技</a></li>
+                    <li><a href="#">装备评测</a></li>
+                    <li><a href="#" class="nav-cta">加入社区</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <span class="hero-tag">专业防务评测平台</span>
+                <h1>洞察全球防务动态<br>解析尖端战术装备</h1>
+                <p>关注中国猎人防务精英，为您提供深度军事分析、特种作战装备解析及最新军事科技前沿报道。</p>
+                <div>
+                    <a href="#" class="btn">浏览最新装备</a>
+                    <a href="#" class="btn btn-outline">查看战术指南</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Featured Section -->
+            <section>
+                <div class="section-header">
+                    <h2 class="section-title">精选推荐</h2>
+                    <a href="#" class="section-more">查看全部 &rarr;</a>
+                </div>
+                <div class="grid-layout">
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/jet/600/400.jpg" alt="隐形战机" class="card-image">
+                        <div class="card-body">
+                            <span class="card-category">军事科技</span>
+                            <h3 class="card-title"><a href="#">隐身战机技术演进与未来空战格局分析</a></h3>
+                            <p class="card-excerpt">随着第五代隐身技术的普及，第六代战机的概念逐渐浮出水面。本文深入探讨隐身材料与主动相控阵雷达的博弈。</p>
+                            <div class="card-meta">
+                                <span>2023-10-24</span>
+                                <span>阅读: 2.4k</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/rifle/600/400.jpg" alt="突击步枪" class="card-image">
+                        <div class="card-body">
+                            <span class="card-category">战术装备</span>
+                            <h3 class="card-title"><a href="#">新一代单兵作战系统：从穿戴到感知</a></h3>
+                            <p class="card-excerpt">现代特种作战不再依赖单纯火力，单兵信息化装备成为关键。解析智能头盔与外骨骼技术的实战应用。</p>
+                            <div class="card-meta">
+                                <span>2023-10-22</span>
+                                <span>阅读: 1.8k</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/navy/600/400.jpg" alt="海军舰艇" class="card-image">
+                        <div class="card-body">
+                            <span class="card-category">海防动态</span>
+                            <h3 class="card-title"><a href="#">远洋海军建设：航母编队的体系作战能力</a></h3>
+                            <p class="card-excerpt">探讨航母战斗群在远海护航、反介入/区域拒止（A2/AD）任务中的核心作用及补给体系保障。</p>
+                            <div class="card-meta">
+                                <span>2023-10-20</span>
+                                <span>阅读: 3.1k</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Main Content Layout -->
+            <div class="main-layout">
+                <div class="content-area">
+                    <div class="section-header">
+                        <h2 class="section-title">深度专题</h2>
+                    </div>
+                    <div class="article-list">
+                        <article class="article-item">
+                            <img src="https://picsum.photos/seed/sniper/400/300.jpg" alt="狙击步枪" class="article-thumb">
+                            <div class="article-content">
+                                <h3><a href="#">超视距狙击：现代战争中的远程精确打击</a></h3>
+                                <p>随着高精度制导弹药的发展，狙击手的射程与精度正在发生质变。从传统机械瞄准具到数字化火控系统，揭秘现代超视距狙击作战流程。</p>
+                                <span class="article-date">2023-10-18 · 特种作战</span>
+                            </div>
+                        </article>
+                        <article class="article-item">
+                            <img src="https://picsum.photos/seed/drone/400/300.jpg" alt="无人机" class="article-thumb">
+                            <div class="article-content">
+                                <h3><a href="#">察打一体无人机：改变战争形态的“空中杀手”</a></h3>
+                                <p>无人机集群作战已成为现代战场的重要组成部分。分析当前主流察打一体无人机的性能参数及其在巷战、山地战中的战术应用。</p>
+                                <span class="article-date">2023-10-15 · 军事科技</span>
+                            </div>
+                        </article>
+                        <article class="article-item">
+                            <img src="https://picsum.photos/seed/armor/400/300.jpg" alt="防弹衣" class="article-thumb">
+                            <div class="article-content">
+                                <h3><a href="#">轻量化防弹装备的突破与挑战</a></h3>
+                                <p>如何在保证防弹性能的前提下减轻重量？新型陶瓷复合材料的研发与应用正在为前线士兵带来革命性的防护体验。</p>
+                                <span class="article-date">2023-10-12 · 战术装备</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <aside>
+                    <div class="widget">
+                        <h4 class="widget-title">热门榜单</h4>
+                        <ul class="rank-list">
+                            <li><span class="rank-num">1</span><a href="#">中国新型驱逐舰满载排水量曝光</a></li>
+                            <li><span class="rank-num">2</span><a href="#">美军新一代单兵外骨骼测试视频</a></li>
+                            <li><span class="rank-num">3</span><a href="#">特种部队渗透训练纪录片解析</a></li>
+                            <li><span class="rank-num">4</span><a href="#">狙击手必学的环境观察技巧</a></li>
+                            <li><span class="rank-num">5</span><a href="#">全球最先进防空导弹系统对比</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="widget">
+                        <h4 class="widget-title">装备分类</h4>
+                        <div class="tag-cloud">
+                            <a href="#" class="tag">单兵武器</a>
+                            <a href="#" class="tag">夜视器材</a>
+                            <a href="#" class="tag">战术背心</a>
+                            <a href="#" class="tag">通讯设备</a>
+                            <a href="#" class="tag">防弹头盔</a>
+                            <a href="#" class="tag">军用车辆</a>
+                            <a href="#" class="tag">无人机</a>
+                            <a href="#" class="tag">激光武器</a>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <h4 class="widget-title">关于我们</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">
+                            防务精英之中国猎人致力于为军事爱好者提供客观、专业的防务资讯与装备评测。我们尊重事实，关注技术发展。
+                        </p>
+                        <a href="#" style="color: var(--accent-color); font-size: 0.9rem;">了解更多 &rarr;</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <!-- Equipment Showcase -->
+        <section class="showcase-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">核心装备体系</h2>
+                </div>
+                <div class="equipment-grid">
+                    <div class="equip-card">
+                        <div class="equip-icon">🛡️</div>
+                        <h4>单兵防护</h4>
+                        <p>先进陶瓷插板与凯夫拉纤维复合材料，提供全方位立体防护。</p>
+                    </div>
+                    <div class="equip-card">
+                        <div class="equip-icon">🎯</div>
+                        <h4>精确打击</h4>
+                        <p>模块化武器系统，支持多种口径切换，适应复杂战场环境。</p>
+                    </div>
+                    <div class="equip-card">
+                        <div class="equip-icon">📡</div>
+                        <h4>态势感知</h4>
+                        <p>集成式火控与数据链系统，实现单兵与指挥中心的实时互联。</p>
+                    </div>
+                    <div class="equip-card">
+                        <div class="equip-icon">🚁</div>
+                        <h4>空中支援</h4>
+                        <p>轻型察打一体无人机，为地面部队提供实时目标指引与火力覆盖。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="logo">防务精英<span>之中国猎人</span></div>
+                    <p>专注防务领域深度内容创作，解析全球军事科技动态，为爱好者提供专业的装备评测与战术分析。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>栏目导航</h4>
+                    <ul>
+                        <li><a href="#">防务新闻</a></li>
+                        <li><a href="#">装备图鉴</a></li>
+                        <li><a href="#">战术讲堂</a></li>
+                        <li><a href="#">历史回顾</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>资源下载</h4>
+                    <ul>
+                        <li><a href="#">战术手册PDF</a></li>
+                        <li><a href="#">装备参数库</a></li>
+                        <li><a href="#">战术模拟软件</a></li>
+                        <li><a href="#">社区论坛</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="#">投稿合作</a></li>
+                        <li><a href="#">商务洽谈</a></li>
+                        <li><a href="#">广告服务</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 防务精英之中国猎人 版权所有. 本站内容仅供学习交流使用，不代表官方立场。
+            </div>
+        </div>
+    </footer>
+
+</body>
+                                                   </html>
