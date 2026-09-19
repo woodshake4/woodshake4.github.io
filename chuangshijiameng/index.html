@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="窗饰加盟网提供专业的窗帘、卷帘、百叶窗等家居遮阳产品加盟政策、扶持方案、费用预算及开店指南。汇集优质品牌资源，助力投资者快速启动窗帘店生意。">
+    <meta name="keywords" content="窗饰加盟,窗帘加盟,窗帘店加盟,卷帘加盟,遮阳产品加盟,窗帘代理">
+    <title>窗饰加盟-专业窗帘品牌加盟与开店扶持平台</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #5D4037; /* 棕色系，代表家居质感 */
+            --secondary-color: #8D6E63;
+            --accent-color: #D7CCC8;
+            --bg-color: #FAFAFA;
+            --text-main: #333333;
+            --text-light: #666666;
+            --white: #FFFFFF;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 顶部导航 */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 16px;
+            color: var(--text-main);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .cta-btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(93, 64, 55, 0.3);
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #4E342E 100%);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn-outline {
+            border: 2px solid var(--white);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary-color);
+        }
+
+        /* 为什么选择窗饰加盟 */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            font-size: 16px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            border-top: 4px solid transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-top-color: var(--primary-color);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        /* 行业分析 */
+        .industry-analysis {
+            background-color: var(--white);
+        }
+
+        .analysis-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .analysis-text h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .analysis-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            color: var(--text-light);
+        }
+
+        .analysis-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .analysis-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .stat-box {
+            background-color: var(--bg-color);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* 加盟优势 */
+        .advantage-section {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .advantage-section .section-header h2 {
+            color: var(--white);
+        }
+
+        .advantage-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .adv-item {
+            text-align: center;
+        }
+
+        .adv-item h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #EFEBE9;
+        }
+
+        .adv-item p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* 品牌展示 */
+        .brands-section {
+            background-color: #F5F5F5;
+        }
+
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .brand-card {
+            background: var(--white);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            height: 120px;
+            transition: var(--transition);
+        }
+
+        .brand-card:hover {
+            transform: scale(1.05);
+        }
+
+        .brand-name {
+            font-weight: bold;
+            color: var(--text-light);
+            font-size: 16px;
+        }
+
+        /* 底部 CTA */
+        .cta-section {
+            background: linear-gradient(to right, #8D6E63, #5D4037);
+            color: var(--white);
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .cta-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #3E2723;
+            color: #D7CCC8;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-info h3 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 992px) {
+            .analysis-content {
+                grid-template-columns: 1fr;
+            }
+            .advantage-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* 简化处理，移动端隐藏菜单 */
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero-buttons {
+                flex-direction: column;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 顶部导航 -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <span>窗饰</span>加盟网
+            </a>
+            <nav class="nav-links">
+                <a href="#industry">行业分析</a>
+                <a href="#advantage">加盟优势</a>
+                <a href="#brands">品牌专区</a>
+                <a href="#faq">常见问题</a>
+            </nav>
+            <a href="#" class="cta-btn">获取加盟资料</a>
+        </div>
+    </header>
+
+    <!-- 首屏 Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>开启窗帘窗饰加盟事业</h1>
+            <p>家居软装行业蓝海市场，低门槛、高回报。为您提供从品牌选择、选址装修到运营培训的一站式加盟解决方案。</p>
+            <div class="hero-buttons">
+                <a href="#" class="cta-btn">立即咨询</a>
+                <a href="#industry" class="btn-outline">了解行业</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心优势 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>为什么要加盟窗饰品牌</h2>
+                <p>专业品牌赋能，让您的创业之路更稳健</p>
+            </div>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>品牌设计支持</h3>
+                    <p>提供专业的窗帘花型设计、店铺装修效果图及软装搭配方案，提升品牌形象。</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">🏭</div>
+                    <h3>供应链保障</h3>
+                    <p>自有或合作工厂源头直供，确保产品质量稳定，价格优势明显，库存周转快。</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>技术培训支持</h3>
+                    <p>提供专业的窗帘制作、安装及门店运营培训，确保员工技能达标，服务专业。</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>营销推广支持</h3>
+                    <p>线上线下全方位营销策划，包含活动策划、广告投放指导及新媒体运营支持。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行业分析 -->
+    <section class="section industry-analysis" id="industry">
+        <div class="container">
+            <div class="analysis-content">
+                <div class="analysis-text">
+                    <h3>窗饰行业投资前景</h3>
+                    <p style="margin-bottom: 20px;">随着人们生活水平的提高和审美观念的升级，窗帘已不再是单纯的遮光工具，而是家居装修中提升档次的重要软装单品。窗饰行业正朝着个性化、定制化、智能化方向发展。</p>
+                    <ul class="analysis-list">
+                        <li>家居装修刚需，市场存量与增量并存</li>
+                        <li>定制化服务需求旺盛，客单价逐年提升</li>
+                        <li>智能窗帘市场处于爆发期，增长潜力巨大</li>
+                        <li>一二线城市趋于饱和，三四线城市潜力待挖</li>
+                    </ul>
+                </div>
+                <div class="analysis-stats">
+                    <div class="stat-box">
+                        <span class="stat-number">3000亿+</span>
+                        <span class="stat-label">窗帘行业年产值</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">15%</span>
+                        <span class="stat-label">年复合增长率</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">90%</span>
+                        <span class="stat-label">家庭装修必选</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">30%</span>
+                        <span class="stat-label">复购率与转介绍率</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 加盟优势 -->
+    <section class="section advantage-section" id="advantage">
+        <div class="container">
+            <div class="section-header">
+                <h2>加盟服务体系</h2>
+                <p style="color: #EFEBE9;">全流程扶持，让您省心省力</p>
+            </div>
+            <div class="advantage-grid">
+                <div class="adv-item">
+                    <h4>选址评估</h4>
+                    <p>实地考察，精准定位</p>
+                </div>
+                <div class="adv-item">
+                    <h4>装修设计</h4>
+                    <p>专业团队，样板打造</p>
+                </div>
+                <div class="adv-item">
+                    <h4>开业筹备</h4>
+                    <p>人员招聘，物料备货</p>
+                </div>
+                <div class="adv-item">
+                    <h4>运营指导</h4>
+                    <p>销售技巧，客户维护</p>
+                </div>
+                <div class="adv-item">
+                    <h4>区域保护</h4>
+                    <p>独家经营，利益最大化</p>
+                </div>
+                <div class="adv-item">
+                    <h4>物流配送</h4>
+                    <p>快速响应，安装无忧</p>
+                </div>
+                <div class="adv-item">
+                    <h4>物料支持</h4>
+                    <p>宣传画册，样册赠送</p>
+                </div>
+                <div class="adv-item">
+                    <h4>持续培训</h4>
+                    <p>定期进修，新品更新</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 品牌展示 -->
+    <section class="section brands-section" id="brands">
+        <div class="container">
+            <div class="section-header">
+                <h2>合作品牌</h2>
+                <p>汇聚国内外优质窗饰品牌</p>
+            </div>
+            <div class="brand-grid">
+                <div class="brand-card"><span class="brand-name">兰叙窗帘</span></div>
+                <div class="brand-card"><span class="brand-name">摩力克</span></div>
+                <div class="brand-card"><span class="brand-name">罗兰</span></div>
+                <div class="brand-card"><span class="brand-name">美居乐</span></div>
+                <div class="brand-card"><span class="brand-name">大视野</span></div>
+                <div class="brand-card"><span class="brand-name">维多利</span></div>
+                <div class="brand-card"><span class="brand-name">金蝉</span></div>
+                <div class="brand-card"><span class="brand-name">康莉</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>想了解更多加盟政策？</h2>
+            <p style="margin-bottom: 30px; opacity: 0.9;">填写表单，获取专属加盟方案及最新优惠政策</p>
+            <a href="#" class="cta-btn" style="background-color: var(--white); color: var(--primary-color);">申请免费资料</a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer id="faq">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>窗饰加盟网</h3>
+                    <p>专注窗饰行业加盟服务，致力于为投资者提供真实、全面的品牌信息与开店指导。连接优质品牌与有志创业者，共创美好家居生活。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">加盟流程</a></li>
+                        <li><a href="#">费用预算</a></li>
+                        <li><a href="#">开店指南</a></li>
+                        <li><a href="#">品牌列表</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>热门品类</h4>
+                    <ul>
+                        <li><a href="#">遮光窗帘</a></li>
+                        <li><a href="#">电动窗帘</a></li>
+                        <li><a href="#">罗马帘</a></li>
+                        <li><a href="#">百叶窗</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>咨询热线：400-123-4567</li>
+                        <li>邮箱：service@chuangshi.com</li>
+                        <li>地址：中国家居建材城A座</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 窗饰加盟网 版权所有 | 本站信息仅供参考，具体以品牌方政策为准</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
